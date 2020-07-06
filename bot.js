@@ -40,7 +40,7 @@ client.on("ready", () => {
         moment.locale('en');
         var m = member.user;
        let yumz = new Discord.RichEmbed()
-       .setColor('#65497')
+       .setColor('RANDOM')
        .setAuthor(`${m.tag}`, m.avatarURL)
        .setThumbnail(m.avatarURL)
        .setDescription(`**WELCOME <@${m.id}> to FRWD CLAN Make sure to read the <#702552445531717632> ** \n > **Joined Discord at :** \n** ${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(member.user.createdAt).fromNow()}\``)        
