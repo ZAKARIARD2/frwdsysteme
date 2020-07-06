@@ -1,17 +1,12 @@
 const { Client, RichEmbed } = require("discord.js");
 var { Util } = require('discord.js');
-const {TOKEN, YT_API_KEY, prefix, devs} = require('./config.js')
-const fs = require("fs");
-const ms = require("ms");
 const client = new Client({ disableEveryone: true})
 const Discord = require("discord.js");
-const moment = require("moment");
+
 
 
 
  
-
-
 
 //status
 var used1 = false;
