@@ -23,7 +23,7 @@ client.on("ready", () => {
     } else {
       client.user.setActivity(`YT:FRWD CLAN`, {
         type: "playing"
-      } else {
+      } await {
       client.user.setActivity(`Coded by zakaria.`, {
         type: "playing" });
       used1 = true;
