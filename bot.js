@@ -23,7 +23,9 @@ client.on("ready", () => {
     } else {
       client.user.setActivity(`YT:FRWD CLAN`, {
         type: "playing"
-      });
+      } else {
+      client.user.setActivity(`Coded by zakaria.`, {
+        type: "playing" });
       used1 = true;
     }
   }, 5000);
