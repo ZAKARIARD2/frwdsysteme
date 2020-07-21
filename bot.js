@@ -16,7 +16,7 @@ client.on("ready", () => {
   client.user.setStatus("idle").catch(console.error);
   setInterval(() => {
     if (used1) {
-      client.user.setActivity("Use code Alaaw1511", {
+      client.user.setActivity("Coded by zakaria.", {
         type: "watching"
       });
       used1 = false;
