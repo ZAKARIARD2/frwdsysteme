@@ -40,7 +40,7 @@ client.on("ready", () => {
               .setColor('#ffffff')
               .setAuthor(user.user.username, user.user.displayAvatarURL)
               .setThumbnail(user.user.displayAvatarURL)
-             .setDescription("**WELCOME" + user + "To Official Server Of Team Vare Make sure to read the <#746395598894268547 >" ** `\n > **Joined Discord at :** \n** ${moment(createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(user.createdAt).fromNow()}\``)        
+             .setDescription("**WELCOME" + user + "To Official Server Of Team Vare Make sure to read the <#746395598894268547 >" ** `\n > **Joined Discord at :** \n** ${moment(createdAt).format('D/M/YYYY h:mm a')} ** `)        
              .setImage("https://cdn.discordapp.com/attachments/751538929651417178/751552594966741033/WELCOME_DISCORD.jpg")
              .setFooter('Coded by zakaria');
              user.guild.channels.get("750349078445031533").send(joinEmbed)
