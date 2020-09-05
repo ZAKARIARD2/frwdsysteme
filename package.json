@@ -1,12 +1,12 @@
 {
-  "name": "gooba-bot",
-  "version": "0.0.1",
-  "description": "A bot for Discord",
-  "readme": "README.md",
-  "author": "ZAKARIARD <zakaria.rad2006@gmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Xety/Discord-Bot"
+
+  "name": "hamid 123",
+  "version": "2.0",
+  "description": "Youssam  Best dev In Discord",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  
   },
   "bugs": {
     "url": "https://github.com/Xety/Discord-Bot/issues"
