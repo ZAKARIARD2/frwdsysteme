@@ -17,12 +17,12 @@ client.on("ready", () => {
   setInterval(() => {
     if (used1) {
       client.user.setActivity("Coded by zakaria.", {
-        type: "watching"
+        type: "playing"
       });
       used1 = false;
     } else {
-      client.user.setActivity(`YT:FRWD CLAN`, {
-        type: "playing"
+      client.user.setActivity(`#VAREONTOP`, {
+        type: "watching"
       });
       used1 = true;
     }
@@ -43,8 +43,8 @@ client.on("ready", () => {
        .setColor('RANDOM')
        .setAuthor(`${m.tag}`, m.avatarURL)
        .setThumbnail(m.avatarURL)
-       .setDescription(`**WELCOME <@${m.id}> to FRWD CLAN Make sure to read the <#702552445531717632> ** \n > **Joined Discord at :** \n** ${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(member.user.createdAt).fromNow()}\``)        
-       .setImage("https://cdn.discordapp.com/attachments/405817866399776768/701564502394536005/welcome.jpg")
+       .setDescription(`**WELCOME <@${m.id}> To Official Server Of Team Vare Make sure to read the <#746395598894268547 > ** \n > **Joined Discord at :** \n** ${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(member.user.createdAt).fromNow()}\``)        
+       .setImage("https://cdn.discordapp.com/attachments/751538929651417178/751552594966741033/WELCOME_DISCORD.jpg")
        .setFooter('Coded by zakaria');
     welcomer.send({embed:yumz});          
      }
