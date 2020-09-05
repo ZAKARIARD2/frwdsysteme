@@ -33,17 +33,16 @@ client.on("ready", () => {
 
 
 
-  client.on('guildMemberAdd', user => {
-  let joinEmbed = new Discord.RichEmbed()
-        moment.locale('en');
-        var m = member.user;
-        var embed = new Discord.RichEmbed()
-        .setColor('#1968650')
-       .setAuthor(`${m.tag}`, m.avatarURL)
-       .setThumbnail(m.avatarURL)
-       .setDescription(`**WELCOME <@${m.id}> To Official Server Of Team Vare Make sure to read the <#746395598894268547 > ** \n > **Joined Discord at :** \n** ${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(member.user.createdAt).fromNow()}\``)        
-       .setImage("https://cdn.discordapp.com/attachments/751538929651417178/751552594966741033/WELCOME_DISCORD.jpg")
-       .setFooter('Coded by zakaria');
-       user.guild.channels.get("750349078445031533").send(joinEmbed)
-      });
+   client.on('guildMemberAdd', user => {
+        let joinEmbed = new Discord.RichEmbed()
+              moment.locale('en');
+              var embed = new Discord.RichEmbed()
+              .setColor('#1968650')
+              .setAuthor(user.user.username, user.user.displayAvatarURL)
+              .setThumbnail(user.user.displayAvatarURL)
+             .setDescription("**WELCOME" + user + "To Official Server Of Team Vare Make sure to read the <#746395598894268547 >" ** `\n > **Joined Discord at :** \n** ${moment(user.createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(user.createdAt).fromNow()}\``)        
+             .setImage("https://cdn.discordapp.com/attachments/751538929651417178/751552594966741033/WELCOME_DISCORD.jpg")
+             .setFooter('Coded by zakaria');
+             user.guild.channels.get("750349078445031533").send(joinEmbed)
+            });
 client.login(process.env.TOKEN);
