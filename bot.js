@@ -35,6 +35,9 @@ client.on("ready", () => {
 
    client.on('guildMemberAdd', user => {
         let joinEmbed = new Discord.RichEmbed()
+               const millis = new Date().getTime() - message.guild.createdAt.getTime();
+               const now = new Date();
+               const createdAt = millis / 1000 / 60 / 60 / 24; 
               moment.locale('en');
               var embed = new Discord.RichEmbed()
               .setColor('#ffffff')
