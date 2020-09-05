@@ -33,20 +33,17 @@ client.on("ready", () => {
 
 
 
-  client.on('guildMemberAdd', member => {
-    const welcomer =  member.guild.channels.find('name', '・︱welcome');
-   if(!welcomer) return;
-     if(welcomer) {
+  client.on('guildMemberAdd', user => {
+  let joinEmbed = new Discord.RichEmbed()
         moment.locale('en');
         var m = member.user;
-       let yumz = new Discord.RichEmbed()
-       .setColor('#1968650')
+        var embed = new Discord.RichEmbed()
+        .setColor('#1968650')
        .setAuthor(`${m.tag}`, m.avatarURL)
        .setThumbnail(m.avatarURL)
        .setDescription(`**WELCOME <@${m.id}> To Official Server Of Team Vare Make sure to read the <#746395598894268547 > ** \n > **Joined Discord at :** \n** ${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(member.user.createdAt).fromNow()}\``)        
        .setImage("https://cdn.discordapp.com/attachments/751538929651417178/751552594966741033/WELCOME_DISCORD.jpg")
        .setFooter('Coded by zakaria');
-    welcomer.send({embed:yumz});          
-     }
-    });
+       user.guild.channels.get("750349078445031533").send(joinEmbed)
+      });
 client.login(process.env.TOKEN);
