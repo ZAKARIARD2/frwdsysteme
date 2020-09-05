@@ -40,7 +40,7 @@ client.on("ready", () => {
         moment.locale('en');
         var m = member.user;
        let yumz = new Discord.RichEmbed()
-       .setColor('RANDOM')
+       .setColor('#1968650')
        .setAuthor(`${m.tag}`, m.avatarURL)
        .setThumbnail(m.avatarURL)
        .setDescription(`**WELCOME <@${m.id}> To Official Server Of Team Vare Make sure to read the <#746395598894268547 > ** \n > **Joined Discord at :** \n** ${moment(member.user.createdAt).format('D/M/YYYY h:mm a')} ** **\n** \`${moment(member.user.createdAt).fromNow()}\``)        
