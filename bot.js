@@ -25,7 +25,7 @@ To get yourself started !`)
 });
 
 client.on("ready", () => {
-  const channel = client.channels.get("750349078445031533");
+  const channel = client.channels.get("750349073974034532");
   if (!channel) return console.error("The channel does not exist!");
   channel
     .join()
